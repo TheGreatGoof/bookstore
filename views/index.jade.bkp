@@ -1,0 +1,23 @@
+extends layout
+
+block content
+    .hero-unit.angled
+        .container
+            h1#heading Bookstore!
+            p
+            h5.lead What do you want to read today?
+            p
+                input(id="searchBooks", placeholder="Search for books")
+                text 
+                button(type="button", class="btn") Search
+    .span3
+        .nav.nav-tabs.nav-stacked.bs-sidenav
+            li.active
+                a(href="#") List Data
+            li
+                a(href="/addBooks") Add Books
+            li
+                a(href="#") Delete Data
+            li.divider
+            li
+                a(href="#") About        

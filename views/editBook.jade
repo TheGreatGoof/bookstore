@@ -1,0 +1,52 @@
+extends layout
+
+block heading
+    container
+        .page-header
+            h1 Edit #{book.bookName}
+            P 
+            h1
+                small   Make changes and hit Save
+
+block content
+    .span8    
+        form(class="form-horizontal", action="editBook", method="post")
+            .control-group
+                label(class="control-label", for="inputTitle") Title
+                .controls
+                    input(type="text", id="inputTitle", name="inputTitle", value='#{book.bookName}')
+                
+            .control-group
+                label(class="control-label", for="inputCover") Cover Image URL
+                .controls
+                    input(type="text", id="inputCover", name="inputCover", placeholder="Cover Picture URL")
+
+            .control-group
+                label(class="control-label", for="inputAuthor") Author
+                .controls
+                    input(type="text", id="inputAuthor", name="inputAuthor", value='#{book.authorName}')
+
+            .control-group
+                label(class="control-label", for="inputTags") Tags
+                .controls
+                    input(type="text", id="inputTags", name="inputTags", value='#{book.tags}')
+
+            .control-group
+                label(class="control-label", for="inputDate") Date Added
+                .controls
+                    input(type="date", id="inputDate", name="inputDate", value='#{book.added}')
+
+            .control-group
+                label(class="control-label", for="inputComments") Comments
+                .controls
+                    input(type="text", id="inputComments", name="inputComments", value='#{book.comments}')
+
+            .control-group
+                .controls
+                    input(type="hidden", id="inputId", name="inputId", value='#{id}')
+                    
+            .control-group
+                .controls
+                    button(type="submit", class="btn") Save Changes
+                    button(type="reset", class="btn") Reset Changes
+                    button(type="button", class="btn", onClick="window.location.href='/browseBooks'") Cancel

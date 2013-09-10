@@ -1,0 +1,31 @@
+doctype 5
+html
+  head
+    link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Devonshire')
+    title A Bookstore! - #{title}
+    link(rel='stylesheet', href='/bootstrap/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/bootstrap/css/bootstrap-responsive.min.css')
+    link(rel='stylesheet', href='/stylesheets/mystyle.css')
+    script(src='http://ajax.googleapis.com/ajax/libs/jquery/jquery.min.js')
+    script(src='/bootstrap/js/bootstrap.min.js')
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+  body
+    div.navbar.navbar-inverse.navbar-fixed-top
+        div.navbar-inner
+            button(type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse")
+    div.span2
+      ul.nav.nav-list
+        li.nav-header Options
+        li.active
+          a(href="/")
+            All books
+        li
+          a(href="/addNewBooks")
+            Add new entries
+        li
+          a(href="/deleteBooks")
+            Delete entries
+        li        
+          a(href="/about")
+            About
+    block content

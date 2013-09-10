@@ -1,0 +1,23 @@
+{
+  "name": "bookstore",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": ".\\node_modules\\.bin\\supervisor app.js",
+	"test": ".\\node_modules\\.bin\\mocha -u tdd -w"
+  },
+  "dependencies": {
+    "express": "3.3.4",
+    "jade": "*",
+	"connect": "*", 
+	"mongoose": "*",
+	"mocha": "*",
+	"chai": "*",
+	"sinon": "*",
+	"supervisor": "*",
+    "passport": "*",
+    "passport-local": "*",
+    "passport-google": "*",
+    "passport-facebook": "*"
+  }
+}

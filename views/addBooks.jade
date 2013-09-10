@@ -1,0 +1,52 @@
+extends layout
+
+block heading
+    container
+        .page-header
+            h1 Add Books
+            p
+            h1 
+                small   Add books to your collection
+
+block content    
+    .span5
+        form(class="form-horizontal", action="/addbook", method="post")
+            .control-group
+                label(class="control-label", for="inputTitle") Title
+                .controls
+                    .input-append
+                        input(type="text", class="span5", id="inputTitle", name="inputTitle", placeholder="Book Title")
+                        button(type="button", class="btn", id="loadCover") Load Cover
+            .control-group
+                label(class="control-label", for="inputCover") Cover Image URL
+                .controls
+                    input(type="text", class="span5", id="inputCover", name="inputCover", placeholder="Cover Picture URL")
+
+            .control-group
+                label(class="control-label", for="inputAuthor") Author
+                .controls
+                    input(type="text", class="span5", id="inputAuthor", name="inputAuthor", placeholder="Author")
+
+            .control-group
+                label(class="control-label", for="inputTags") Tags
+                .controls
+                    input(type="text", class="span5", id="inputTags", name="inputTags", placeholder="Tags")
+
+            .control-group
+                label(class="control-label", for="inputDate") Date Added
+                .controls
+                    input(type="date", class="span5", id="inputDate", name="inputDate", value='#{added}')
+
+            .control-group
+                label(class="control-label", for="inputComments") Comments
+                .controls
+                    input(type="text", class="span5", id="inputComments", name="inputComments", placeholder="Comments")
+
+            .control-group
+                .controls
+                    button(type="submit", class="btn") Add this book!
+                    
+    .span3.pull-right
+        <img src="/images/covers/PlaceHolder.jpg" class="img-rounded">
+    
+    script(src='/javascript/getCover.js')

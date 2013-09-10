@@ -1,0 +1,31 @@
+extends layout
+
+block heading
+    container
+        .page-header
+            h1 Manage Collection
+            h1
+                small   Manage your book collection
+
+block content
+    .span8    
+        table.table.table-bordered.table-condensed.table-hover
+            thead
+                tr
+                    th Title
+                    th Author
+                    th Date Added
+                    th Edit
+                    th Delete
+            tbody
+                each book in books
+                    tr
+                        td #{book.bookName}
+                        td #{book.authorName}
+                        td #{book.added.toDateString()}
+                        td
+                            a(href="/editBook/#{book._id}")
+                                i.icon-pencil
+                        td
+                            a(href="/deleteBook/#{book._id}")
+                                i.icon-remove

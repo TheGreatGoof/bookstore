@@ -1,0 +1,19 @@
+extends layout
+
+block heading
+    .modal.fade-in
+        Hello World!
+    .hero-unit.angled
+        .container
+            h1#heading Bookstore!
+            p
+            h5.lead What did you read today?
+            p
+                input(id="searchBooks", placeholder="Search for books")
+                text 
+                button(type="button", class="btn") Search
+    
+block content
+    p
+        Testing
+block sidebar

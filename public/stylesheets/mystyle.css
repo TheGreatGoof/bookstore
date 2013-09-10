@@ -1,0 +1,159 @@
+#heading {
+    font-family: 'Devonshire', cursive;
+    font-size: 72px
+}
+
+.login   {
+    height: 20px
+}
+
+.btn-login  {
+  background-color: hsl(121, 56%, 25%) !important;
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4bcc4e", endColorstr="#1c631d");
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#4bcc4e), to(#1c631d));
+  background-image: -moz-linear-gradient(top, #4bcc4e, #1c631d);
+  background-image: -ms-linear-gradient(top, #4bcc4e, #1c631d);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #4bcc4e), color-stop(100%, #1c631d));
+  background-image: -webkit-linear-gradient(top, #4bcc4e, #1c631d);
+  background-image: -o-linear-gradient(top, #4bcc4e, #1c631d);
+  background-image: linear-gradient(#4bcc4e, #1c631d);
+  border-color: #1c631d #1c631d hsl(121, 56%, 17.5%);
+  color: #fff !important;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.49);
+  -webkit-font-smoothing: antialiased;
+}
+
+.btn-signup {
+  background-color: hsl(0, 69%, 22%) !important;
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b42121", endColorstr="#5e1111");
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#b42121), to(#5e1111));
+  background-image: -moz-linear-gradient(top, #b42121, #5e1111);
+  background-image: -ms-linear-gradient(top, #b42121, #5e1111);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #b42121), color-stop(100%, #5e1111));
+  background-image: -webkit-linear-gradient(top, #b42121, #5e1111);
+  background-image: -o-linear-gradient(top, #b42121, #5e1111);
+  background-image: linear-gradient(#b42121, #5e1111);
+  border-color: #5e1111 #5e1111 hsl(0, 69%, 17%);
+  color: #fff !important;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.33);
+  -webkit-font-smoothing: antialiased;
+}
+
+/*body > .navbar .search  {
+    padding-right: 0;
+    padding-left: 0;
+    margin-left: 20px;
+    float: right;
+}
+
+.bs-sidenav .icon-chevron-right {
+    float: right;
+    margin-top: 2px;
+    margin-right: -6px;
+    opacity: .25;
+}*/
+
+.angled {
+			-webkit-background-size: 20px 20px;
+            -moz-background-size: 20px 20px;
+            background-size: 20px 20px; 	
+            background-color:#060;
+            
+        background-image: /* Safari 5 and earlier */
+				-webkit-gradient(linear, 100% 100%, 0 0,
+					color-stop(.25, rgba(255, 255, 255, 0.2)), 
+					color-stop(.25, rgba(255, 255, 255, 0)),
+					color-stop(.5, rgba(255, 255, 255, 0)), 
+					color-stop(.5, rgba(255, 255, 255, 0.2)),
+					color-stop(.75, rgba(255, 255, 255, 0.2)), 
+					color-stop(.75, rgba(255, 255, 255, 0)), 
+					color-stop(1, rgba(255, 255, 255, 0)));
+		background-image:	/* Chrome and Webkit Nightly build */
+			-webkit-linear-gradient(135deg,
+					rgba(255, 255, 255, 0.2) 25%, 
+					rgba(255, 255, 255, 0) 25%,
+					rgba(255, 255, 255, 0) 50%, 
+					rgba(255, 255, 255, 0.2) 50%, 
+					rgba(255, 255, 255, 0.2) 75%,
+					rgba(255, 255, 255, 0) 75%,
+					rgba(255, 255, 255, 0) 100%
+	  				);
+		background-image:	/* Firefox */
+			-moz-linear-gradient(135deg,
+					rgba(255, 255, 255, 0.2) 25%, 
+					rgba(255, 255, 255, 0) 25%,
+					rgba(255, 255, 255, 0) 50%, 
+					rgba(255, 255, 255, 0.2) 50%, 
+					rgba(255, 255, 255, 0.2) 75%,
+					rgba(255, 255, 255, 0) 75%,
+					rgba(255, 255, 255, 0) 100%
+	  				);
+			background-image:	/* IE10 */
+			-ms-linear-gradient(135deg,
+					rgba(255, 255, 255, 0.2) 25%, 
+					rgba(255, 255, 255, 0) 25%,
+					rgba(255, 255, 255, 0) 50%, 
+					rgba(255, 255, 255, 0.2) 50%, 
+					rgba(255, 255, 255, 0.2) 75%,
+					rgba(255, 255, 255, 0) 75%,
+					rgba(255, 255, 255, 0) 100%
+	  				);
+			background-image:	/* opera 11+ */
+			-o-linear-gradient(135deg,
+					rgba(255, 255, 255, 0.2) 25%, 
+					rgba(255, 255, 255, 0) 25%,
+					rgba(255, 255, 255, 0) 50%, 
+					rgba(255, 255, 255, 0.2) 50%, 
+					rgba(255, 255, 255, 0.2) 75%,
+					rgba(255, 255, 255, 0) 75%,
+					rgba(255, 255, 255, 0) 100%
+	  				);
+			background-image:	
+			linear-gradient(135deg,
+					rgba(255, 255, 255, 0.2) 25%, 
+					rgba(255, 255, 255, 0) 25%,
+					rgba(255, 255, 255, 0) 50%, 
+					rgba(255, 255, 255, 0.2) 50%, 
+					rgba(255, 255, 255, 0.2) 75%,
+					rgba(255, 255, 255, 0) 75%,
+					rgba(255, 255, 255, 0) 100%
+	  				);
+		}
+
+
+.hero-unit  {
+    background-color: #ac0;
+	background-image: -webkit-gradient(linear, 0 100%, 100% 0,
+							color-stop(.25, rgba(255, 255, 255, .2)), color-stop(.25, transparent),
+							color-stop(.5, transparent), color-stop(.5, rgba(255, 255, 255, .2)),
+							color-stop(.75, rgba(255, 255, 255, .2)), color-stop(.75, transparent),
+	 						to(transparent));
+	background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%,
+						transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%,
+						transparent 75%, transparent);
+	background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%,
+						transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%,
+						transparent 75%, transparent);
+	background-image: -ms-linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%,
+                        transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%,
+						transparent 75%, transparent);
+	background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%,
+						transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%,
+						transparent 75%, transparent);
+	background-image: linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%,
+						transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%,
+						transparent 75%, transparent);
+}
+
+/* Added as a workaround to account for hidden space under top-fixed navbar
+http://stackoverflow.com/questions/11124777/twitter-bootstrap-navbar-fixed-top-overlapping-site
+*/
+body { 
+    padding-top: 40px;
+    margin:20px;
+}
+@media screen and (max-width: 768px) {
+    body { padding-top: 0px; }
+}

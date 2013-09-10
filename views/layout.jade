@@ -1,0 +1,49 @@
+doctype html
+html
+  head
+    link(rel='stylesheet', type="text/css", href='http://fonts.googleapis.com/css?family=Devonshire')
+    title A Bookstore! - #{title}
+    meta(name="viewport", content="width=device-width", initial-scale="1.0")
+    link(rel='stylesheet', href='/bootstrap/css/bootstrap.min.css', media="screen")
+    link(rel='stylesheet', href='/stylesheets/mystyle.css')
+    script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js')
+    script(src='/bootstrap/js/bootstrap.min.js')    
+  body
+    .navbar.navbar-inverse.navbar-fixed-top
+        .navbar-inner
+            button(type="button", class="btn btn-navbar", data-toggle="collapse", data-target=".nav-collapse")
+                span.icon-bar
+                span.icon-bar
+                span.icon-bar
+            div(style="padding-left: 20px")
+                unless index
+                    a(class="brand", href="/") Bookstore!   
+            .nav-collapse.collapse
+            ul(style="padding-right: 20px", class="nav pull-right")
+                li.divider-vertical
+                li
+                    form.navbar-form.pull-right.login
+                        input(type="text", class="span2", placeholder="Username")
+                        text 
+                        input(type="password", class="span2", placeholder="Password")
+                        text 
+                        button(type="login", class="btn btn-login") Login!
+                li.divider-vertical
+                li
+                    form(action="/signup", method="get", class="navbar-form")
+                        input(type="submit", value="Sign Up!", name="signup", id="signup", class="btn btn-signup")
+    block heading
+    .row
+        .span4
+            .nav.nav-tabs.nav-stacked.bs-sidenav
+                li
+                    a(href="/") Home
+                li
+                    a(href="/addBooks") Add Books
+                li
+                    a(href="/browseBooks") Manage Collection
+                li.divider
+                li
+                    a(href="#") About
+        block sidebar
+                block content
